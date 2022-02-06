@@ -1,0 +1,93 @@
+.video {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    min-height: 100vh;
+    z-index: -100;
+}
+
+.input-group {
+    position: absolute;
+    background-color: rgba(41, 41, 41, 0.548);
+}
+
+.form-control {
+    text-align: center !important;
+    background-color: transparent !important;
+    padding: 20px 20px !important;
+    color: white !important;
+    font-size: 32px !important;
+}
+
+.form-control::placeholder {
+    color: aliceblue !important;
+    font-size: 32px;
+}
+
+.btn-outline-warning {
+    padding: 20px 20px !important;
+}
+
+.weather-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.weather-card .card {
+    margin: 10px 10px !important;
+    background-color: rgba(41, 41, 41, 0.548) !important;
+    color: white !important;
+}
+
+.card-header {
+    font-size: 30px;
+    text-transform: capitalize !important;
+}
+
+.card-title {
+    font-size: 42px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bi-thermometer-half {
+    color: dodgerblue;
+}
+
+.bi-brightness-high {
+    color: yellow;
+}
+
+.bi-wind {
+    font-size: 25px;
+    color: rgb(141, 141, 255);
+}
+
+.bi-moisture {
+    font-size: 25px;
+    color: rgb(221, 255, 141);
+}
+
+.img-icon {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+}
