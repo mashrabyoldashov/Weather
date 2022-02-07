@@ -5,11 +5,12 @@ let elHeding = document.querySelector(".text-light");
 
 
 const renderElement = function(data) {
+    let celsiy = Math.trunc(data.main.temp - 273);
     const html = `
   <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
   <div class="card-header">City: ${data.name} (${data.sys.country})</div>
   <div class="card-body">
-    <h5 class="card-title"><i class="bi bi-thermometer-half"></i> ${data.main.temp}F</h5> 
+    <h5 class="card-title"><i class="bi bi-thermometer-half"></i> ${celsiy} °C</h5> 
 
     <img class="img-icon" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
 
