@@ -1,11 +1,11 @@
 let elInput = document.querySelector(".input");
-let elBtn = document.querySelector(".form");
+let elForm = document.querySelector(".form");
 let newWeath = document.querySelector(".weather-card");
 let elHeding = document.querySelector(".text-light");
 
 
 const renderElement = function(data) {
-    let celsiy = Math.trunc(data.main.temp - 273);
+    let celsiy = Math.round(data.main.temp) - 273;
     const html = `
   <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
   <div class="card-header">City: ${data.name} (${data.sys.country})</div>
@@ -41,12 +41,12 @@ const weather = async function(country) {
         renderElement(data);
         console.log(data);
     } catch {
-        alert('Xatolik yuz berdi')
+        alert(`Kechirasiz ${country} ob-havosi bo'yicha hechqanday malumot topilmadi`)
     }
 }
 
 
-elBtn.addEventListener("submit", (evt) => {
+elForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
     let inputValue = elInput.value;
     inputValue.value = null;
