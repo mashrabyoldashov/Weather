@@ -7,6 +7,15 @@
     z-index: -100;
 }
 
+.div {
+    font-family: 'Wallpoet', kursiv;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+}
+
 .input-group {
     position: absolute;
     background-color: rgba(41, 41, 41, 0.548);

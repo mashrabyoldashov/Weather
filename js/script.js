@@ -52,3 +52,21 @@ elForm.addEventListener("submit", (evt) => {
     inputValue.value = null;
     weather(`${inputValue}`);
 })
+
+// Soat uchun funksiya
+
+function timeShover() {
+    let currentDate = new Date();
+
+    console.log(currentDate);
+
+    document.querySelector(".hours").textContent = currentDate.getHours();
+    document.querySelector(".minutes").textContent = currentDate.getMinutes();
+    document.querySelector(".seconds").textContent = currentDate.getSeconds();
+}
+
+timeShover()
+
+setInterval(() => {
+    timeShover();
+}, 1000);
